@@ -83,6 +83,18 @@ function s:ExReRunLastTest()
   execute "ExTestRunLast"
 endfunction
 
+function s:RubyRunAllTestsInFile()
+  execute "normal \<Plug>RubyFileRun"
+endfunction
+
+function s:RubyRunTestUnderCursor()
+  execute "normal \<Plug>RubyTestRun"
+endfunction
+
+function s:RubyReRunLastTest()
+  execute "normal \<Plug>RubyTestRunLast"
+endfunction
+
 function s:NoActionMapped()
   echo "No action mapped"
 endfunction
@@ -93,3 +105,6 @@ let s:actions["elixir"]["RunAllTestsInFile"]  = function("s:ExRunAllTestsInFile"
 let s:actions["elixir"]["RunTestUnderCursor"] = function("s:ExRunTestUnderCursor")
 let s:actions["elixir"]["ReRunLastTest"]      = function("s:ExReRunLastTest")
 let s:actions["ruby"] = {}
+let s:actions["ruby"]["RunAllTestsInFile"]  = function("s:RubyRunAllTestsInFile")
+let s:actions["ruby"]["RunTestUnderCursor"] = function("s:RubyRunTestUnderCursor")
+let s:actions["ruby"]["ReRunLastTest"]      = function("s:RubyReRunLastTest")
