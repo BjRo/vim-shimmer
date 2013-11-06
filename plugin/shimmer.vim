@@ -29,16 +29,16 @@ command ShimmerTestRunTest call <SID>RunTestUnderCursor()
 command ShimmerTestRunLast call <SID>ReRunLastTest()
 
 " Mappings
-if !hasmapto(":ShimmerTestRunFile<CR>")
-  "Replace default binding of rubytest.vim
-  unmap <Leader>t
-  map <unique> <Leader>t :ShimmerTestRunFile<CR>
-endif
-
 if !hasmapto(":ShimmerTestRunTest<CR>")
   "Replace default binding of rubytest.vim
+  unmap <Leader>t
+  map <unique> <Leader>t :ShimmerTestRunTest<CR>
+endif
+
+if !hasmapto(":ShimmerTestRunFile<CR>")
+  "Replace default binding of rubytest.vim
   unmap <Leader>T
-  map <unique> <Leader>T :ShimmerTestRunTest<CR>
+  map <unique> <Leader>T :ShimmerTestRunFile<CR>
 endif
 
 if !hasmapto(":ShimmerTestRunLast<CR>")
