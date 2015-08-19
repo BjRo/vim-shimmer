@@ -92,7 +92,7 @@ function s:RubyRunTestUnderCursor()
 endfunction
 
 function s:RubyReRunLastTest()
-  execute "normal \<Plug>RubyTestRunLast"
+  execute "normal \<Plug>RubyLastRun"
 endfunction
 
 function s:NoActionMapped()
