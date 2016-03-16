@@ -1,3 +1,6 @@
+# Deprecated
+This plugin is deprecated. [vim-test](https://github.com/janko-m/vim-test) offers much more (and is what I personally use nowadays).
+
 # shimmer.vim
 
 I created the `shimmer.vim` plugin out of a personal need. I'm using [vim](http://www.vim.org) for work in multiple languages (Ruby, Elixir, and others). For every language there's a Vim plugin to do all sorts of things, but I want to reuse the same keybindings across language borders. Running tests for instance is one of those things and it's the first thing I implemented.
